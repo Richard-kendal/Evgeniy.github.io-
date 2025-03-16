@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Разработчик | Мои проекты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Иван Иванов</h1>
+            <p class="subtitle">Backend Разработчик</p>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Обо мне</a></li>
+                    <li><a href="projects.html" class="active">Мои проекты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Мои проекты</h2>
+
+            <div class="project">
+                <h3>E-commerce Platform</h3>
+                <p><strong>Технологии:</strong> Node.js, Express, MongoDB</p>
+                <button class="accordion-btn">Показать описание</button>
+                <div class="accordion-content">
+                    <p>Платформа для онлайн-магазинов с поддержкой платежей через Stripe и интеграцией с CRM.</p>
+                    <h4>Пример API-запроса:</h4>
+                    <pre><code class="javascript">
+// Получение списка товаров
+app.get('/api/products', async (req, res) => {
+    try {
+        const products = await Product.find();
+        res.json(products);
+    } catch (error) {
+        res.status(500).json({ message: 'Ошибка сервера' });
+    }
+});
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Microservices Architecture</h3>
+                <p><strong>Технологии:</strong> Go, Kubernetes, RabbitMQ</p>
+                <button class="accordion-btn">Показать описание</button>
+                <div class="accordion-content">
+                    <p>Микросервисная архитектура для обработки больших объемов данных в реальном времени.</p>
+                    <h4>Пример API-запроса:</h4>
+                    <pre><code class="go">
+package main
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Привет, это микросервис!")
+}
+
+func main() {
+    http.HandleFunc("/", handler)
+    http.ListenAndServe(":8080", nil)
+}
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Task Management API</h3>
+                <p><strong>Технологии:</strong> Python, Django, PostgreSQL</p>
+                <button class="accordion-btn">Показать описание</button>
+                <div class="accordion-content">
+                    <p>API для управления задачами с поддержкой авторизации через JWT.</p>
+                    <h4>Пример API-запроса:</h4>
+                    <pre><code class="python">
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+class TaskList(APIView):
+    def get(self, request):
+        tasks = Task.objects.all()
+        serializer = TaskSerializer(tasks, many=True)
+        return Response(serializer.data)
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Иван Иванов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
