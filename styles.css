@@ -1,0 +1,108 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #bdc3c7;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-links a.active {
+    background: #1abc9c;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.accordion-btn {
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    display: none;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background: #ecf0f1;
+    border-radius: 5px;
+}
+
+pre {
+    background: #f4f4f9;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #e74c3c;
+}
+
+.go code {
+    color: #6c7a89;
+}
+
+.python code {
+    color: #3498db;
+}
+
+.javascript code {
+    color: #f39c12;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #2c3e50;
+    color: #fff;
+    margin-top: 2rem;
+}
