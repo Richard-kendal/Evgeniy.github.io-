@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backend Разработчик | Резюме</title>
+    <title>Backend Разработчик | Обо мне</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,32 +11,38 @@
         <div class="container">
             <h1>Иван Иванов</h1>
             <p class="subtitle">Backend Разработчик</p>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Обо мне</a></li>
+                    <li><a href="projects.html">Мои проекты</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="tabs">
+    <section class="about">
         <div class="container">
-            <ul class="tab-links">
-                <li class="tab-link active" data-tab="about">Обо мне</li>
-                <li class="tab-link" data-tab="projects">Мои проекты</li>
+            <h2>Обо мне</h2>
+            <p>Я опытный backend-разработчик с более чем 5 годами опыта в создании масштабируемых и надежных серверных решений. Специализируюсь на разработке API, базах данных и интеграции систем.</p>
+            <h3>Мои навыки:</h3>
+            <ul class="skills-list">
+                <li>Node.js</li>
+                <li>Python (Django, Flask)</li>
+                <li>Go</li>
+                <li>PostgreSQL, MongoDB</li>
+                <li>Docker, Kubernetes</li>
+                <li>AWS, Google Cloud</li>
+                <li>RESTful API, GraphQL</li>
             </ul>
-
-            <div id="about" class="tab-content active">
-                <h2>Опыт работы</h2>
-                <p>Я опытный backend-разработчик с более чем 5 годами опыта в создании масштабируемых и надежных серверных решений. Специализируюсь на разработке API, базах данных и интеграции систем.</p>
-                <div class="job">
-                    <h3>Senior Backend Developer - TechCorp</h3>
-                    <p class="job-duration">Январь 2021 — Настоящее время</p>
-                    <ul>
-                        <li>Разработка микросервисной архитектуры на Node.js и Go.</li>
-                        <li>Оптимизация производительности баз данных PostgreSQL.</li>
-                        <li>Внедрение CI/CD процессов с использованием Jenkins и GitLab.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="projects" class="tab-content">
-                <!-- Контент будет загружен динамически -->
+            <h3>Опыт работы:</h3>
+            <div class="job">
+                <h4>Senior Backend Developer - TechCorp</h4>
+                <p class="job-duration">Январь 2021 — Настоящее время</p>
+                <ul>
+                    <li>Разработка микросервисной архитектуры на Node.js и Go.</li>
+                    <li>Оптимизация производительности баз данных PostgreSQL.</li>
+                    <li>Внедрение CI/CD процессов с использованием Jenkins и GitLab.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -46,7 +52,5 @@
             <p>&copy; 2023 Иван Иванов. Все права защищены.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
